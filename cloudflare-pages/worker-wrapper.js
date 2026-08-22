@@ -8,7 +8,7 @@ const staticFiles = new Set([
   "/window.svg",
 ]);
 
-export default {
+const worker = {
   async fetch(request, env, context) {
     const { pathname } = new URL(request.url);
 
@@ -22,3 +22,5 @@ export default {
     return app.fetch(request, env, context);
   },
 };
+
+export default worker;
