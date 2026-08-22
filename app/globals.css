@@ -166,14 +166,31 @@ svg {
 .hero-media {
   position: absolute;
   inset: 0;
+  overflow: hidden;
+  background: #050505;
+}
+
+.hero-media::before {
+  content: "";
+  position: absolute;
+  inset: -32px;
+  background: url("/images/audi-angle.webp") center 58% / cover no-repeat;
+  filter: blur(22px) saturate(.64) brightness(.42);
+  opacity: .72;
 }
 
 .hero-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 68% 56%;
+  position: absolute;
+  top: -19%;
+  right: max(-34px, calc((100vw - 1600px) / 2));
+  width: auto;
+  height: 124%;
+  max-width: none;
+  object-fit: contain;
+  object-position: center;
   filter: contrast(1.06) saturate(.72) brightness(.68);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 18%, #000 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 18%, #000 100%);
   animation: heroReveal 1.2s cubic-bezier(.2,.8,.2,1) both;
 }
 
@@ -1327,7 +1344,22 @@ footer > small {
   }
 
   .hero-media img {
-    object-position: 58% center;
+    top: 66px;
+    right: 0;
+    width: 100%;
+    height: 58%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: 52% center;
+    -webkit-mask-image: linear-gradient(0deg, transparent 0%, #000 22%, #000 100%);
+    mask-image: linear-gradient(0deg, transparent 0%, #000 22%, #000 100%);
+  }
+
+  .hero-media::before {
+    inset: -20px;
+    background-position: 52% 62%;
+    filter: blur(16px) saturate(.62) brightness(.36);
+    opacity: .62;
   }
 
   .hero-copy {
