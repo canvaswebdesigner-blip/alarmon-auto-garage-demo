@@ -14,35 +14,35 @@ const gallery = [
     className: "gallery-tall",
   },
   {
-    src: "/images/audi-angle.webp",
+    src: "/images/audi-angle-blurred.jpg",
     alt: "Alarmon Auto Garage tarafından PPF uygulanan siyah Audi SQ8",
     label: "Audi SQ8",
     detail: "Komple PPF uygulaması",
     className: "gallery-wide",
   },
   {
-    src: "/images/dacia-rear.jpg",
+    src: "/images/dacia-rear-blurred.jpg",
     alt: "Alarmon Auto Garage uygulaması sonrası Dacia Sandero",
     label: "Dacia Sandero",
     detail: "210 mikron PPF + cam filmi",
     className: "",
   },
   {
-    src: "/images/bmw-finish.jpg",
+    src: "/images/bmw-finish-blurred.jpg",
     alt: "Pasta cila, seramik ve detaylı iç bakım sonrası BMW 320",
     label: "BMW 3.20",
     detail: "Pasta polish + seramik + detaylı iç bakım",
     className: "",
   },
   {
-    src: "/images/audi-front.webp",
+    src: "/images/audi-front-blurred.jpg",
     alt: "Alarmon Auto Garage uygulaması sonrası siyah Audi SQ8",
     label: "Audi SQ8",
     detail: "Boya koruma filmi uygulaması",
     className: "gallery-wide",
   },
   {
-    src: "/images/dacia-front.jpg",
+    src: "/images/dacia-front-blurred.jpg",
     alt: "Alarmon Auto Garage önünde Dacia Sandero",
     label: "Dacia Sandero",
     detail: "Teslim görünümü",
@@ -248,7 +248,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-media" aria-hidden="true">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/audi-angle.webp" alt="" />
+          <img src="/images/audi-angle-blurred.jpg" alt="" />
         </div>
         <div className="hero-grid" aria-hidden="true" />
         <div className="hero-copy">

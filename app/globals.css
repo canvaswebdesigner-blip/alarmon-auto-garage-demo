@@ -174,7 +174,7 @@ svg {
   content: "";
   position: absolute;
   inset: -32px;
-  background: url("/images/audi-angle.webp") center 58% / cover no-repeat;
+  background: url("/images/audi-angle-blurred.jpg") center 58% / cover no-repeat;
   filter: blur(22px) saturate(.64) brightness(.42);
   opacity: .70;
 }
